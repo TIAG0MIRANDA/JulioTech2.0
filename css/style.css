@@ -1,0 +1,60 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------- Section header ------------------- */
+header {
+    background-color: antiquewhite;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+#logo {
+    height: 50px;
+    width: 100px;
+    border: solid 1px;
+    margin: 25px;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 400px;
+}
+
+#nav-list {
+    list-style: none;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 6px 8px;
+}
+
+a:hover {
+    background-color: #00f2ff;
+}
+
+/* ------------------- Section main ------------------- */
+main {
+    background-color: aquamarine;
+    height: 100px;
+    width: 100%;
+}
+
+
+/* ------------------- Section footer ------------------- */
+footer {
+    background-color: burlywood;
+    height: 100px;
+    width: 100%;
+}
