@@ -6,48 +6,109 @@
 
 /* ------------------- Section header ------------------- */
 header {
-    background-color: antiquewhite;
-    height: 100px;
     width: 100%;
+    height: 80px;
+    padding: 0 20px;
     position: fixed;
     z-index: 1000;
-}
+    display: flex;
+    justify-content: center;
+    background-color: rgb(29, 29, 29);
 
-#logo {
-    height: 50px;
-    width: 100px;
-    border: solid 1px;
-    margin: 25px;
 }
 
 #nav-bar {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 400px;
+    justify-content: space-between;
+    /* Limite de largura para centralizar o conteúdo */
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+#logo a {
+    color: white;
+    text-decoration: none;
+}
+
+#tech {
+    color: #00e9f1;
 }
 
 #nav-list {
-    list-style: none;
     gap: 30px;
     display: flex;
+    list-style: none;
     align-items: center;
 }
 
-a {
+.nav-link {
+    color: white;
     text-decoration: none;
-    color: black;
     padding: 6px 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
 }
 
-a:hover {
-    background-color: #00f2ff;
+.nav-link.active {
+    color: #00e9f1;
+}
+
+.nav-link:hover {
+    color: #00e9f1;
+}
+
+#nav-list li {
+    position: relative;
+    /* Para permitir o posicionamento absoluto do pseudo-elemento */
+}
+
+.nav-link.active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    /* Espessura da linha */
+    background-color: #00e9f1;
+    /* Cor da linha */
+    width: 100%;
+    /* A linha ocupará toda a largura do link */
+    position: absolute;
+    /* Posiciona a linha em relação ao link */
+    bottom: -32px;
+    /* Distância da linha para baixo do texto */
+    left: 0;
+    /* Alinha a linha à esquerda */
+}
+
+
+#login {
+    border: solid 2px white;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+#login:hover {
+    background-color: #00e9f1;
+    color: black;
 }
 
 /* ------------------- Section main ------------------- */
 main {
-    background-color: aquamarine;
-    height: 100px;
+    background-color: rgb(29, 29, 29);
+    height: 1000px;
     width: 100%;
 }
 
