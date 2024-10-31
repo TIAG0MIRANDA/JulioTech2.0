@@ -4,17 +4,22 @@
     padding: 0;
 }
 
-/* ------------------- Section header ------------------- */
+::-webkit-scrollbar {
+    width: 0;
+    /* Largura da scrollbar */
+    background: transparent;
+    /* Fundo da scrollbar */
+}
+
 header {
     width: 100%;
-    height: 80px;
+    height: 10.5vh;
     padding: 0 20px;
     position: fixed;
     z-index: 1000;
     display: flex;
     justify-content: center;
     background-color: rgb(29, 29, 29);
-
 }
 
 nav {
@@ -23,7 +28,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Limite de largura para centralizar o conteúdo */
 }
 
 #logo {
@@ -42,11 +46,27 @@ nav {
     color: #00e9f1;
 }
 
-#nav-list {
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+
+.nav-list {
     gap: 30px;
     display: flex;
     list-style: none;
     align-items: center;
+}
+
+.nav-list.active {
+    transform: translateX(0);
 }
 
 .nav-link {
@@ -55,7 +75,6 @@ nav {
     padding: 6px 8px;
     text-transform: uppercase;
     letter-spacing: 2px;
-
 }
 
 .nav-link.active {
@@ -66,28 +85,20 @@ nav {
     color: #00e9f1;
 }
 
-#nav-list li {
+.nav-list li {
     position: relative;
-    /* Para permitir o posicionamento absoluto do pseudo-elemento */
 }
 
 .nav-link.active::after {
     content: '';
     display: block;
     height: 2px;
-    /* Espessura da linha */
     background-color: #00e9f1;
-    /* Cor da linha */
     width: 100%;
-    /* A linha ocupará toda a largura do link */
     position: absolute;
-    /* Posiciona a linha em relação ao link */
-    bottom: -32px;
-    /* Distância da linha para baixo do texto */
+    bottom: -29px;
     left: 0;
-    /* Alinha a linha à esquerda */
 }
-
 
 #login {
     border: solid 2px white;
@@ -97,7 +108,6 @@ nav {
     border-radius: 5px;
     text-transform: uppercase;
     letter-spacing: 2px;
-
 }
 
 #login:hover {
@@ -105,17 +115,68 @@ nav {
     color: black;
 }
 
-/* ------------------- Section main ------------------- */
 main {
-    background-color: rgb(29, 29, 29);
-    height: 1000px;
+    background-color: rgb(145, 53, 53);
+    height: auto;
     width: 100%;
+    padding-top: 10.5vh;
 }
 
-
-/* ------------------- Section footer ------------------- */
 footer {
     background-color: burlywood;
     height: 100px;
     width: 100%;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 10.5vh;
+        right: 0;
+        width: 40vw;
+        height: 89.5vh;
+        background-color: rgb(29, 29, 29);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list li {
+        margin-left: -40px;
+        opacity: 0;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
 }
