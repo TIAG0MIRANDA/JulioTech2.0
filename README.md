@@ -1,0 +1,2 @@
+# JulioTech
+JulioTech 2.0 é a reimaginação de um projeto criado originalmente durante o ensino médio no Senac, agora reformulado com uma base sólida em desenvolvimento adquirida ao longo dos últimos anos. Nesta nova versão, o objetivo é aplicar práticas modernas de tecnologia, design e programação para entregar uma solução mais completa, funcional e profissional. JulioTech 2.0 representa não apenas um avanço técnico, mas também uma evolução pessoal e acadêmica.
