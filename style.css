@@ -9,7 +9,7 @@
     ;
     --cor1: #19B5FE;
     --cor2: #203742;
-    --cor3: #4A7D8E;
+    --cor3: #393939;
     --cor4: #635445;
     --cor5: #313739;
 }
@@ -22,9 +22,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    /* alinha verticalmente */
     justify-content: space-between;
-    /* espaço entre os elementos */
     padding: 0 20px;
     height: 100px;
     width: 100%;
@@ -54,9 +52,7 @@ header>nav {
 header>nav>ul {
     list-style: none;
     display: flex;
-    /* isso faz os <li> ficarem em linha */
     gap: 25px;
-    /* espaço entre os itens (opcional) */
     margin: 0;
     padding: 0;
 }
@@ -85,3 +81,76 @@ header>nav>ul>li>.login:hover {
 }
 
 /* ------------------------------------ */
+
+main {
+    padding-top: 100px;
+}
+
+main>div {
+    border: solid 1px greenyellow;
+    padding: 20px;
+}
+
+main>div>h1 {
+    text-transform: uppercase;
+    color: var(--cor2);
+    text-align: center;
+    font-size: 55px;
+}
+
+main>div>p {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+main>div>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--cor1);
+    padding: 10px;
+}
+
+main>div>a:hover {
+    text-decoration: underline;
+}
+
+main>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 120px;
+}
+
+main>div>div>a {
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor3);
+    text-decoration: none;
+}
+
+main>div>div>a:hover {
+    box-shadow: 0px 0px 10px var(--cor1);
+}
+
+main>div>div>a>.produtos>img {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+
+}
+
+main>div>div>a>.produtos>h1 {
+    color: white;
+    text-align: center;
+}
