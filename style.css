@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor0: #222222;
+    ;
+    --cor1: #19B5FE;
+    --cor2: #203742;
+    --cor3: #4A7D8E;
+    --cor4: #635445;
+    --cor5: #313739;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor0);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    /* alinha verticalmente */
+    justify-content: space-between;
+    /* espaço entre os elementos */
+    padding: 0 20px;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+
+    border: solid 1px red;
+}
+
+header>a {
+    color: white;
+    text-decoration: none;
+}
+
+header>a>h1 {
+    text-shadow: 2px 2px 2px black;
+}
+
+header>a>h1>strong {
+    color: var(--cor1);
+}
+
+header>nav {
+    display: flex;
+}
+
+header>nav>ul {
+    list-style: none;
+    display: flex;
+    /* isso faz os <li> ficarem em linha */
+    gap: 25px;
+    /* espaço entre os itens (opcional) */
+    margin: 0;
+    padding: 0;
+}
+
+header>nav>ul>li>a {
+    color: #ADB7BE;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header>nav>ul>li>a:hover {
+    color: var(--cor1);
+}
+
+header>nav>ul>li>.login {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 2px #ADB7BE;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+header>nav>ul>li>.login:hover {
+    color: var(--cor1);
+    border: solid 2px var(--cor1);
+}
+
+/* ------------------------------------ */
