@@ -28,7 +28,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 999;
-
+    background-color: var(--cor0);
     border: solid 1px red;
 }
 
@@ -84,46 +84,52 @@ main {
     padding-top: 100px;
 }
 
-main>div {
+main>#products-container {
     border: solid 1px greenyellow;
     padding: 20px;
 }
 
-main>div>h1 {
+.info>h1 {
     text-transform: uppercase;
     color: var(--cor2);
     text-align: center;
     font-size: 55px;
 }
 
-main>div>p {
+.info>p {
     text-transform: uppercase;
     color: white;
     text-align: center;
     font-weight: bold;
 }
 
-main>div>a {
+
+.link-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-decoration: none;
-    color: var(--cor1);
-    padding: 10px;
+    align-items: center;
+    margin-top: 20px;
+    /* opcional, só para espaçar */
 }
 
-main>div>a:hover {
+.link-container>a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+.link-container>a:hover {
     text-decoration: underline;
 }
 
-main>div>div {
+main>#products-container>#sessao-produtos {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 250px;
 }
 
-main>div>div>a {
+main>#products-container>#sessao-produtos>a {
     height: 220px;
     width: 300px;
     border-radius: 20px;
@@ -134,12 +140,12 @@ main>div>div>a {
     text-decoration: none;
 }
 
-main>div>div>a:hover {
+main>#products-container>#sessao-produtos>a:hover {
     box-shadow: 0px 0px 10px var(--cor1);
     border: solid 1px var(--cor1);
 }
 
-main>div>div>a>.produtos>img {
+main>#products-container>#sessao-produtos>a>.produtos>img {
     color: rgb(255, 255, 255);
     text-align: center;
     display: flex;
@@ -149,9 +155,30 @@ main>div>div>a>.produtos>img {
 
 }
 
-main>div>div>a>.produtos>p {
+main>#products-container>#sessao-produtos>a>.produtos>p {
     color: white;
     text-align: center;
     font-weight: bold;
     padding: 10px;
+}
+
+main>#services-container {
+    border: solid 1px white;
+}
+
+main>#services-container>#sessao-servicos {
+    border: solid 1px blue  ;
+}
+
+main>#services-container>#sessao-servicos>a:hover {
+    box-shadow: 0px 0px 10px var(--cor1);
+    border: solid 1px var(--cor1);
+}
+
+main>#services-container>#sessao-servicos>a>.servicos>h1 {
+    color: white;
+}
+
+main>#services-container>#sessao-servicos>a>.servicos>p {
+    color: white;
 }
