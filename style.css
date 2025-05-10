@@ -127,6 +127,7 @@ main>#products-container>#sessao-produtos {
     align-items: center;
     justify-content: space-between;
     padding: 20px 250px;
+    gap: 20px;
 }
 
 main>#products-container>#sessao-produtos>a {
@@ -149,7 +150,7 @@ main>#products-container>#sessao-produtos>a>.produtos>img {
     color: rgb(255, 255, 255);
     text-align: center;
     display: flex;
-    height: 180px;
+    height: 80px;
     width: 200px;
     margin: auto;
 
@@ -192,10 +193,38 @@ main>#services-container>#sessao-servicos>a:hover {
     border: solid 1px var(--cor1);
 }
 
-main>#services-container>#sessao-servicos>a>.servicos>h1 {
-    color: white;
+main>#services-container>#sessao-servicos>a>.servicos {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
 }
 
-main>#services-container>#sessao-servicos>a>.servicos>p {
-    color: white;
+main>#services-container>#sessao-servicos>a>.servicos>img {
+    width: 150px;
+    height: 150px;
+    border: solid 1px red; /* Se você quiser manter a borda */
+    margin-right: 10px; /* Para adicionar um espaço entre a imagem e o texto */
 }
+
+main > #services-container > #sessao-servicos > a > .servicos > div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: solid 1px red;
+}
+
+
+
+main>#services-container>#sessao-servicos>a>.servicos>div>h1 {
+    color: white;
+    border: solid 1px red;
+    width: 100%;
+
+}
+
+main>#services-container>#sessao-servicos>a>.servicos>div>p {
+    color: white;
+    border: solid 1px red;
+
+}
+
