@@ -167,7 +167,24 @@ main>#services-container {
 }
 
 main>#services-container>#sessao-servicos {
-    border: solid 1px blue  ;
+    padding: 20px 150px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+main>#services-container>#sessao-servicos>a {
+    flex: 0 1 calc(50% - 20px);
+    /* ocupa metade do espaço, com gap considerado */
+    height: 220px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor3);
+    text-decoration: none;
 }
 
 main>#services-container>#sessao-servicos>a:hover {
