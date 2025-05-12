@@ -10,7 +10,7 @@
     --cor1: #19B5FE;
     --cor2: #203742;
     --cor3: #393939;
-    --cor4: #635445;
+    --cor4: #111111;
     --cor5: #313739;
 }
 
@@ -29,7 +29,6 @@ header {
     position: fixed;
     z-index: 999;
     background-color: var(--cor0);
-    border: solid 1px red;
 }
 
 header>a {
@@ -85,7 +84,6 @@ main {
 }
 
 main>#products-container {
-    border: solid 1px greenyellow;
     padding: 20px;
 }
 
@@ -126,7 +124,7 @@ main>#products-container>#sessao-produtos {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 250px;
+    padding: 20px 250px 150px 250px;
     gap: 20px;
 }
 
@@ -143,14 +141,13 @@ main>#products-container>#sessao-produtos>a {
 
 main>#products-container>#sessao-produtos>a:hover {
     box-shadow: 0px 0px 10px var(--cor1);
-    border: solid 1px var(--cor1);
 }
 
 main>#products-container>#sessao-produtos>a>.produtos>img {
     color: rgb(255, 255, 255);
     text-align: center;
     display: flex;
-    height: 80px;
+    height: 150px;
     width: 200px;
     margin: auto;
 
@@ -163,8 +160,10 @@ main>#products-container>#sessao-produtos>a>.produtos>p {
     padding: 10px;
 }
 
+/* ------------------ */
+
 main>#services-container {
-    border: solid 1px white;
+    padding: 0px 0px 150px 0px;
 }
 
 main>#services-container>#sessao-servicos {
@@ -190,41 +189,45 @@ main>#services-container>#sessao-servicos>a {
 
 main>#services-container>#sessao-servicos>a:hover {
     box-shadow: 0px 0px 10px var(--cor1);
-    border: solid 1px var(--cor1);
 }
 
 main>#services-container>#sessao-servicos>a>.servicos {
     display: flex;
-    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    align-items: center;
+    /* Alinha a imagem e o texto verticalmente */
 }
 
 main>#services-container>#sessao-servicos>a>.servicos>img {
     width: 150px;
     height: 150px;
-    border: solid 1px red; /* Se você quiser manter a borda */
-    margin-right: 10px; /* Para adicionar um espaço entre a imagem e o texto */
+    margin-right: 10px;
+    /* Para adicionar um espaço entre a imagem e o texto */
 }
 
-main > #services-container > #sessao-servicos > a > .servicos > div {
+main>#services-container>#sessao-servicos>a>.servicos>div {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    border: solid 1px red;
 }
 
 
 
 main>#services-container>#sessao-servicos>a>.servicos>div>h1 {
     color: white;
-    border: solid 1px red;
     width: 100%;
-
+    padding-top: 20px;
 }
 
 main>#services-container>#sessao-servicos>a>.servicos>div>p {
     color: white;
-    border: solid 1px red;
-
+    padding: 20px 20px 20px 0px;
 }
 
+/* ---------------------------- */
+
+footer {
+    background-color: var(--cor4);
+    height: 400px;
+
+}
