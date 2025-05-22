@@ -81,15 +81,53 @@ header>nav>ul>li>.login:hover {
 
 main {
     padding-top: 100px;
+        border: solid 1px red;
+
 }
 
-main>#carousel {
+.carrossel {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
     border: solid 1px red;
-    
 }
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 1000px;
+    height: 400px;
+
+}
+
+.anterior,
+.proximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.proximo {
+    right: 10px;
+}
+
+
 
 main>#products-container {
-    padding: 20px;
+    padding: 150px 20px 150px 20px;
 }
 
 .info>h1 {
@@ -129,7 +167,7 @@ main>#products-container>#sessao-produtos {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 250px 150px 250px;
+    padding: 20px 250px 20px 250px;
     gap: 20px;
 }
 
