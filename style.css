@@ -1,21 +1,17 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 :root {
     --cor0: #222222;
+    ;
     --cor1: #19B5FE;
     --cor2: #203742;
     --cor3: #393939;
     --cor4: #111111;
     --cor5: #313739;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
 }
 
 body {
@@ -28,40 +24,47 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
-    height: 10vh;
+    height: 100px;
     width: 100%;
     position: fixed;
     z-index: 999;
     background-color: var(--cor0);
-    border: solid 1px yellow;
 }
 
-.logo {
+header>a {
     color: white;
     text-decoration: none;
+}
+
+header>a>h1 {
     text-shadow: 2px 2px 2px black;
+}
+
+header>a>h1>strong {
+    color: var(--cor1);
+}
+
+header>nav {
+    display: flex;
+}
+
+header>nav>ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header>nav>ul>li>a {
+    color: #ADB7BE;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
-.logo:hover {
-    color: white;
-}
-
-strong {
+header>nav>ul>li>a:hover {
     color: var(--cor1);
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-a:hover {
-    color: var(--cor1);
-}
-
-.login {
+header>nav>ul>li>.login {
     text-decoration: none;
     text-transform: uppercase;
     border: solid 2px #ADB7BE;
@@ -69,96 +72,293 @@ a:hover {
     border-radius: 5px;
 }
 
-.login:hover {
+header>nav>ul>li>.login:hover {
     color: var(--cor1);
     border: solid 2px var(--cor1);
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: var(--cor0);
-    height: 8vh;
-}
-    
-.nav-list {
-    list-style: none;
-    display: flex;
+/* ------------------------------------ */
+
+main {
+    padding-top: 100px;
+        border: solid 1px red;
+
 }
 
-.nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
+.carrossel {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    border: solid 1px red;
 }
 
-.mobile-menu {
-    display: none;
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 1000px;
+    height: 400px;
+
+}
+
+.anterior,
+.proximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
     cursor: pointer;
 }
 
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
+.anterior {
+    left: 10px;
 }
 
-@media (max-width: 900px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .nav-list {
-        position: absolute;
-        top: 10vh;
-        right: 0;
-        width: 30vw;
-        height: 92vh;
-        background: var(--cor0);
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-        border: solid 1px yellow;
-    }
-
-    .nav-list li {
-        margin-left: 0;
-        opacity: 0;
-        margin: 5vh;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
+.proximo {
+    right: 10px;
 }
 
-.nav-list.active {
-    transform: translateX(0);
+
+
+main>#products-container {
+    padding: 150px 20px 150px 20px;
 }
 
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.info>h1 {
+    text-transform: uppercase;
+    color: var(--cor2);
+    text-align: center;
+    font-size: 55px;
 }
 
-.mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
+.info>p {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-weight: bold;
 }
 
-.mobile-menu.active .line2 {
-    opacity: 0;
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* opcional, só para espaçar */
 }
 
-.mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
+.link-container>a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+.link-container>a:hover {
+    text-decoration: underline;
+}
+
+main>#products-container>#sessao-produtos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 250px 20px 250px;
+    gap: 20px;
+}
+
+main>#products-container>#sessao-produtos>a {
+    height: 220px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor3);
+    text-decoration: none;
+}
+
+main>#products-container>#sessao-produtos>a:hover {
+    box-shadow: 0px 0px 10px var(--cor1);
+}
+
+main>#products-container>#sessao-produtos>a>.produtos>img {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    height: 150px;
+    width: 200px;
+    margin: auto;
+
+}
+
+main>#products-container>#sessao-produtos>a>.produtos>p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* ------------------ */
+
+main>#services-container {
+    padding: 0px 0px 150px 0px;
+}
+
+main>#services-container>#sessao-servicos {
+    padding: 20px 150px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+main>#services-container>#sessao-servicos>a {
+    flex: 0 1 calc(50% - 20px);
+    /* ocupa metade do espaço, com gap considerado */
+    height: 220px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor3);
+    text-decoration: none;
+}
+
+main>#services-container>#sessao-servicos>a:hover {
+    box-shadow: 0px 0px 10px var(--cor1);
+}
+
+main>#services-container>#sessao-servicos>a>.servicos {
+    display: flex;
+    align-items: center;
+    /* Alinha a imagem e o texto verticalmente */
+}
+
+main>#services-container>#sessao-servicos>a>.servicos>img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    /* Para adicionar um espaço entre a imagem e o texto */
+}
+
+main>#services-container>#sessao-servicos>a>.servicos>div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+main>#services-container>#sessao-servicos>a>.servicos>div>h1 {
+    color: white;
+    width: 100%;
+    padding-top: 20px;
+}
+
+main>#services-container>#sessao-servicos>a>.servicos>div>p {
+    color: white;
+    padding: 20px 20px 20px 0px;
+}
+
+main>#contatos-container>#esquerda {
+    border: solid 1px red;
+    width: 50%;
+}
+
+main>#contatos-container>#direita {
+    border: solid 1px red;
+    width: 50%;
+    height: 400px;
+}
+
+
+
+/* ---------------------------- */
+
+/* Estilos gerais para a página */
+#contatos-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: solid 1px red;
+}
+
+/* Contêiner flexível para dividir o layout em duas colunas */
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    border: solid 1px red;
+}
+
+/* Estilos da coluna da esquerda */
+#esquerda {
+    width: 35%;
+    background-color: var(--cor0);
+    padding: 15px;
+    border: solid 1px red;
+
+}
+
+#esquerda h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#esquerda>a {
+    text-shadow: 2px 2px 2px black;
+    text-decoration: none;
+}
+
+#esquerda>a>h1 {
+    color: white;
+    text-decoration: none;
+}
+
+#esquerda>a>h1>strong {
+    color: var(--cor1);
+
+}
+
+#esquerda img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Estilos da coluna da direita */
+#direita {
+    width: 60%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Estilos para as seções dentro das colunas */
+#esquerda div {
+    margin-bottom: 20px;
+}
+
+/* Títulos dentro de cada coluna */
+#esquerda p,
+#direita p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+/* ---------------------------- */
+
+
+footer {
+    background-color: var(--cor4);
+    height: 400px;
+
 }
