@@ -36,6 +36,19 @@ header {
     border: solid 1px yellow;
 }
 
+header>a {
+    color: white;
+    text-decoration: none;
+}
+
+header>a>h1 {
+    text-shadow: 2px 2px 2px black;
+}
+
+header>a>h1>strong {
+    color: var(--cor1);
+}
+
 header>nav> {
     color: #fff;
     text-decoration: none;
