@@ -43,6 +43,10 @@ header {
     text-transform: uppercase;
 }
 
+.logo:hover {
+    color: white;
+}
+
 strong {
     color: var(--cor1);
 }
