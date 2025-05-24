@@ -153,6 +153,7 @@ main>#products-container {
     /* opcional, só para espaçar */
 }
 
+<<<<<<< Updated upstream
 .link-container>a {
     display: inline-block;
     text-decoration: none;
@@ -362,3 +363,9 @@ footer {
     height: 400px;
 
 }
+=======
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+>>>>>>> Stashed changes
