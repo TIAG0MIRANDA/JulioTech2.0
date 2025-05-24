@@ -11,165 +11,183 @@
 </head>
 
 <body>
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Júlio Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
     <header>
-        <a href="">
-            <h1>JÚLIO <strong>TECH</strong></h1>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">Produtos</a></li>
-                <li><a href="">Serviços</a></li>
-                <li><a href="">Contatos</a></li>
-                <li><a href="" class="login">Login</a></li>
-            </ul>
-        </nav>
+      <a class="logo" href="/">
+        <h1>Júlio <strong>Tech</strong></h1>
+      </a>
+      <nav>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="/">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+          <li><a href="login.html" class="login">Login</a></li>
+        </ul>
+      </nav>
     </header>
 
+  <main>
     <main>
-        <main>
-            <div class="carrossel">
-                <div class="slides">
-                    <img src="img/audi.jpg" alt="Imagem 1">
-                    <img src="img/gray.jpg" alt="Imagem 2">
-                    <img src="img/mercedes.jpg" alt="Imagem 3">
-                </div>
-                <button class="anterior">◀</button>
-                <button class="proximo">▶</button>
+      <div class="carrossel">
+        <div class="slides">
+          <img src="img/audi.jpg" alt="Imagem 1">
+          <img src="img/gray.jpg" alt="Imagem 2">
+          <img src="img/mercedes.jpg" alt="Imagem 3">
+        </div>
+        <button class="anterior">◀</button>
+        <button class="proximo">▶</button>
+      </div>
+
+      <div id="products-container">
+        <div class="info">
+          <h1>Produtos</h1>
+          <p>Que tipo de equipamento você está procurando?</p>
+          <div class="link-container">
+            <a href="#">Veja mais</a>
+          </div>
+        </div>
+        <div id="sessao-produtos">
+          <a href="">
+            <div class="produtos">
+              <img src="img/Gamer.png" alt="Gamer">
+              <p>Gamer</p>
             </div>
-
-            <div id="products-container">
-                <div class="info">
-                    <h1>Produtos</h1>
-                    <p>Que tipo de equipamento você está procurando?</p>
-                    <div class="link-container">
-                        <a href="#">Veja mais</a>
-                    </div>
-                </div>
-                <div id="sessao-produtos">
-                    <a href="">
-                        <div class="produtos">
-                            <img src="img/Gamer.png" alt="Gamer">
-                            <p>Gamer</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="produtos">
-                            <img src="img/conforto.png" alt="Conforto">
-                            <p>Conforto</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="produtos">
-                            <img src="img/office.png" alt="Escritorio e outros">
-                            <p>Escritorio e outros</p>
-                        </div>
-                    </a>
-                </div>
+          </a>
+          <a href="">
+            <div class="produtos">
+              <img src="img/conforto.png" alt="Conforto">
+              <p>Conforto</p>
             </div>
-
-            <div id="services-container">
-                <div class="info">
-                    <h1>Serviços</h1>
-                    <p>Fornecemos mais do que produtos de tecnologia</p>
-                    <div class="link-container">
-                        <a href="#">Veja mais</a>
-                    </div>
-                </div>
-                <div id="sessao-servicos">
-                    <a href="">
-                        <div class="servicos">
-                            <img src="img/Bom-preço.png" alt="oi">
-                            <div>
-                                <h1>Garantia vitalícia</h1>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis alias porro
-                                    eius sint praesentium illum id similique vitae? Itaque quod recusandae quibusdam
-                                    aspernatur dolorem necessitatibus iste, eveniet deserunt tempora.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="servicos">
-                            <img src="img/Bom-preço.png" alt="oi">
-                            <div>
-                                <h1>Garantia vitalícia</h1>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis alias porro
-                                    eius sint praesentium illum id similique vitae? Itaque quod recusandae quibusdam
-                                    aspernatur dolorem necessitatibus iste, eveniet deserunt tempora.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="servicos">
-                            <img src="img/Bom-preço.png" alt="oi">
-                            <div>
-                                <h1>Garantia vitalícia</h1>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis alias porro
-                                    eius sint praesentium illum id similique vitae? Itaque quod recusandae quibusdam
-                                    aspernatur dolorem necessitatibus iste, eveniet deserunt tempora.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="servicos">
-                            <img src="img/Bom-preço.png" alt="oi">
-                            <div>
-                                <h1>Garantia vitalícia</h1>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis alias porro
-                                    eius sint praesentium illum id similique vitae? Itaque quod recusandae quibusdam
-                                    aspernatur dolorem necessitatibus iste, eveniet deserunt tempora.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+          </a>
+          <a href="">
+            <div class="produtos">
+              <img src="img/office.png" alt="Escritorio e outros">
+              <p>Escritorio e outros</p>
             </div>
-            <div id="contatos-container">
-                <div class="info">
-                    <h1>Contatos</h1>
-                    <p>Fornecemos mais do que produtos de tecnologia</p>
-                </div>
+          </a>
+        </div>
+      </div>
 
-                <div class="container-flex">
-                    <!-- Coluna Esquerda -->
-                    <div id="esquerda">
-                        <a href="">
-                            <h1>JÚLIO <strong>TECH</strong></h1>
-                        </a>
-                        <div>
-                            <p>Contato direto</p>
-                            <img src="" alt="">
-                            <a href="">51 98765-4321</a>
-                            <img src="" alt="">
-                            <a href="">51 98765-4321</a>
-                        </div>
-                        <div>
-                            <p>Social</p>
-                            <img src="" alt="">
-                            <img src="" alt="">
-                            <img src="" alt="">
-                        </div>
-                    </div>
-
-                    <!-- Coluna Direita -->
-                    <div id="direita">
-                        <p>Informações adicionais</p>
-                        <div>
-                            <!-- Você pode adicionar mais conteúdo aqui -->
-                        </div>
-                    </div>
-                </div>
+      <div id="services-container">
+        <div class="info">
+          <h1>Serviços</h1>
+          <p>Fornecemos mais do que produtos de tecnologia</p>
+          <div class="link-container">
+            <a href="#">Veja mais</a>
+          </div>
+        </div>
+        <div id="sessao-servicos">
+          <a href="">
+            <div class="servicos">
+              <img src="img/Bom-preço.png" alt="oi">
+              <div>
+                <h1>Garantia vitalícia</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis alias porro
+                  eius sint praesentium illum id similique vitae? Itaque quod recusandae quibusdam
+                  aspernatur dolorem necessitatibus iste, eveniet deserunt tempora.</p>
+              </div>
             </div>
+          </a>
+          <a href="">
+            <div class="servicos">
+              <img src="img/Bom-preço.png" alt="oi">
+              <div>
+                <h1>Garantia vitalícia</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis alias porro
+                  eius sint praesentium illum id similique vitae? Itaque quod recusandae quibusdam
+                  aspernatur dolorem necessitatibus iste, eveniet deserunt tempora.</p>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="servicos">
+              <img src="img/Bom-preço.png" alt="oi">
+              <div>
+                <h1>Garantia vitalícia</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis alias porro
+                  eius sint praesentium illum id similique vitae? Itaque quod recusandae quibusdam
+                  aspernatur dolorem necessitatibus iste, eveniet deserunt tempora.</p>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="servicos">
+              <img src="img/Bom-preço.png" alt="oi">
+              <div>
+                <h1>Garantia vitalícia</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis alias porro
+                  eius sint praesentium illum id similique vitae? Itaque quod recusandae quibusdam
+                  aspernatur dolorem necessitatibus iste, eveniet deserunt tempora.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="contatos-container">
+        <div class="info">
+          <h1>Contatos</h1>
+          <p>Fornecemos mais do que produtos de tecnologia</p>
+        </div>
+
+        <div class="container-flex">
+          <!-- Coluna Esquerda -->
+          <div id="esquerda">
+            <a href="">
+              <h1>JÚLIO <strong>TECH</strong></h1>
+            </a>
+            <div>
+              <p>Contato direto</p>
+              <img src="" alt="">
+              <a href="">51 98765-4321</a>
+              <img src="" alt="">
+              <a href="">51 98765-4321</a>
+            </div>
+            <div>
+              <p>Social</p>
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+            </div>
+          </div>
+
+          <!-- Coluna Direita -->
+          <div id="direita">
+            <p>Informações adicionais</p>
+            <div>
+              <!-- Você pode adicionar mais conteúdo aqui -->
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
 
-        </main>
+    </main>
 
-        <footer>
+    <footer>
 
-        </footer>
-        <script src="script.js"></script>
-
+    </footer>
+    <script src="script.js"></script>
+    <script src="mobile-navbar.js"></script>
 </body>
 
 </html>
