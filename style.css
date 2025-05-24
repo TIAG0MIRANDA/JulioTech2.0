@@ -166,7 +166,7 @@ nav {
 /* ------------------------------------ */
 
 main {
-    padding-top: 10vh; 
+    padding-top: 10vh;
     border: solid 1px red;
 
 }
@@ -210,9 +210,8 @@ main {
     right: 10px;
 }
 
-
-
-main>#products-container {
+/* ----------- produtos ----------- */
+#produtos {
     padding: 150px 20px 150px 20px;
 }
 
@@ -249,7 +248,7 @@ main>#products-container {
     text-decoration: underline;
 }
 
-main>#products-container>#sessao-produtos {
+main>#produtos>#sessao-produtos {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -257,7 +256,7 @@ main>#products-container>#sessao-produtos {
     gap: 20px;
 }
 
-main>#products-container>#sessao-produtos>a {
+main>#produtos>#sessao-produtos>a {
     height: 220px;
     width: 300px;
     border-radius: 20px;
@@ -268,11 +267,11 @@ main>#products-container>#sessao-produtos>a {
     text-decoration: none;
 }
 
-main>#products-container>#sessao-produtos>a:hover {
+main>#produtos>#sessao-produtos>a:hover {
     box-shadow: 0px 0px 10px var(--cor1);
 }
 
-main>#products-container>#sessao-produtos>a>.produtos>img {
+main>#produtos>#sessao-produtos>a>.produtos>img {
     color: rgb(255, 255, 255);
     text-align: center;
     display: flex;
@@ -282,7 +281,7 @@ main>#products-container>#sessao-produtos>a>.produtos>img {
 
 }
 
-main>#products-container>#sessao-produtos>a>.produtos>p {
+main>#produtos>#sessao-produtos>a>.produtos>p {
     color: white;
     text-align: center;
     font-weight: bold;
@@ -293,7 +292,7 @@ main>#products-container>#sessao-produtos>a>.produtos>p {
 
 main>#services-container {
     padding: 0px 0px 150px 0px;
-}
+}   
 
 main>#services-container>#sessao-servicos {
     padding: 20px 150px;
