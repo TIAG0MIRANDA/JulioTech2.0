@@ -36,35 +36,28 @@ header {
     border: solid 1px yellow;
 }
 
-header>a {
+.logo {
     color: white;
     text-decoration: none;
-}
-
-header>a>h1 {
     text-shadow: 2px 2px 2px black;
     text-transform: uppercase;
 }
 
-header>a>h1>strong {
+strong {
     color: var(--cor1);
 }
 
-header>nav>.nav-list>li>a {
+a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
 }
 
-a:hov   er {
-    opacity: 0.7;
-}
-
-header>nav>ul>li>a:hover {
+a:hover {
     color: var(--cor1);
 }
 
-header>nav>ul>li>.login {
+.login {
     text-decoration: none;
     text-transform: uppercase;
     border: solid 2px #ADB7BE;
@@ -72,7 +65,7 @@ header>nav>ul>li>.login {
     border-radius: 5px;
 }
 
-header>nav>ul>li>.login:hover {
+.login:hover {
     color: var(--cor1);
     border: solid 2px var(--cor1);
 }
