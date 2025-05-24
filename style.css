@@ -88,7 +88,7 @@ nav {
 }
 
 .nav-list li {
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin-left: 32px;
 }
 
@@ -166,7 +166,7 @@ nav {
 /* ------------------------------------ */
 
 main {
-    padding-top: 100px; 
+    padding-top: 10vh; 
     border: solid 1px red;
 
 }
