@@ -174,6 +174,7 @@ main {
 .carrossel {
     position: relative;
     width: 80%;
+    aspect-ratio: 16/6;
     overflow: hidden;
     margin: auto;
     border: solid 1px red;
@@ -185,9 +186,9 @@ main {
 }
 
 .slides img {
-    width: 1000px;
-    height: 400px;
-
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .anterior,
@@ -290,11 +291,11 @@ main>#produtos>#sessao-produtos>a>.produtos>p {
 
 /* ------------------ */
 
-main>#services-container {
+main>#servicos {
     padding: 0px 0px 150px 0px;
-}   
+}
 
-main>#services-container>#sessao-servicos {
+main>#servicos>#sessao-servicos {
     padding: 20px 150px;
     width: 100%;
     display: flex;
@@ -303,7 +304,7 @@ main>#services-container>#sessao-servicos {
     justify-content: center;
 }
 
-main>#services-container>#sessao-servicos>a {
+main>#servicos>#sessao-servicos>a {
     flex: 0 1 calc(50% - 20px);
     /* ocupa metade do espaço, com gap considerado */
     height: 220px;
@@ -315,24 +316,24 @@ main>#services-container>#sessao-servicos>a {
     text-decoration: none;
 }
 
-main>#services-container>#sessao-servicos>a:hover {
+main>#servicos>#sessao-servicos>a:hover {
     box-shadow: 0px 0px 10px var(--cor1);
 }
 
-main>#services-container>#sessao-servicos>a>.servicos {
+main>#servicos>#sessao-servicos>a>.servicos {
     display: flex;
     align-items: center;
     /* Alinha a imagem e o texto verticalmente */
 }
 
-main>#services-container>#sessao-servicos>a>.servicos>img {
+main>#servicos>#sessao-servicos>a>.servicos>img {
     width: 150px;
     height: 150px;
     margin-right: 10px;
     /* Para adicionar um espaço entre a imagem e o texto */
 }
 
-main>#services-container>#sessao-servicos>a>.servicos>div {
+main>#servicos>#sessao-servicos>a>.servicos>div {
     color: white;
     display: flex;
     flex-direction: column;
@@ -341,13 +342,13 @@ main>#services-container>#sessao-servicos>a>.servicos>div {
 
 
 
-main>#services-container>#sessao-servicos>a>.servicos>div>h1 {
+main>#servicos>#sessao-servicos>a>.servicos>div>h1 {
     color: white;
     width: 100%;
     padding-top: 20px;
 }
 
-main>#services-container>#sessao-servicos>a>.servicos>div>p {
+main>#servicos>#sessao-servicos>a>.servicos>div>p {
     color: white;
     padding: 20px 20px 20px 0px;
 }
