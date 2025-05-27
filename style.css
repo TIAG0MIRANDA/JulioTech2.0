@@ -366,31 +366,23 @@ main>#contatos-container>#direita {
 
 
 
-/* ---------------------------- */
-
-/* Estilos gerais para a página */
-#contatos-container {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    border: solid 1px red;
-}
-
-/* Contêiner flexível para dividir o layout em duas colunas */
+/* ========================== CONTATO ========================== */
 .container-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* 👉 Centraliza horizontalmente */
     gap: 20px;
     margin-top: 20px;
-    border: solid 1px red;
+    border: solid 1px rgb(47, 0, 255);
+    padding-bottom: 170px;
 }
+
 
 /* Estilos da coluna da esquerda */
 #esquerda {
     width: 35%;
     background-color: var(--cor0);
-    padding: 15px;
+    padding: 20px;
     border: solid 1px red;
-
 }
 
 #esquerda h1 {
@@ -419,17 +411,28 @@ main>#contatos-container>#direita {
     margin-right: 10px;
 }
 
-/* Estilos da coluna da direita */
-#direita {
-    width: 60%;
-    background-color: #f4f4f4;
-    padding: 15px;
-    border-radius: 8px;
-}
-
 /* Estilos para as seções dentro das colunas */
 #esquerda div {
     margin-bottom: 20px;
+}
+/* ============================================================= */
+
+/* Estilos da coluna da direita */
+#direita {
+    width: 50%;
+    background-color: #f4f4f4;
+    padding: 20px 40px 20px 20px;
+    border: solid 1px rgb(21, 255, 0);
+}
+
+.input-group {
+    display: flex;
+    gap: 20px;
+    border: solid 1px red;
+}
+
+.input-group>input {
+    width: 50%;
 }
 
 /* Títulos dentro de cada coluna */
@@ -439,10 +442,12 @@ main>#contatos-container>#direita {
     margin-bottom: 10px;
 }
 
+
+
 /* ---------------------------- */
 
 footer {
-    background-color: var(--cor4);
+    background-color: bisque;
     height: 400px;
 
 }
