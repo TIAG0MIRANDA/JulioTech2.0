@@ -369,7 +369,8 @@ main>#contatos-container>#direita {
 /* ========================== CONTATO ========================== */
 .container-flex {
     display: flex;
-    justify-content: center; /* 👉 Centraliza horizontalmente */
+    justify-content: center;
+    /* 👉 Centraliza horizontalmente */
     gap: 20px;
     margin-top: 20px;
     border: solid 1px rgb(47, 0, 255);
@@ -415,6 +416,7 @@ main>#contatos-container>#direita {
 #esquerda div {
     margin-bottom: 20px;
 }
+
 /* ============================================================= */
 
 /* Estilos da coluna da direita */
@@ -441,8 +443,6 @@ main>#contatos-container>#direita {
     font-size: 16px;
     margin-bottom: 10px;
 }
-
-
 
 /* ---------------------------- */
 
