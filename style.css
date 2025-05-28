@@ -422,26 +422,72 @@ main>#contatos-container>#direita {
 /* Estilos da coluna da direita */
 #direita {
     width: 50%;
-    background-color: #f4f4f4;
+    background-color: var(--cor0);
     padding: 20px 40px 20px 20px;
     border: solid 1px rgb(21, 255, 0);
 }
 
+#direita>P {
+    color: white;
+}
+
+form {}
+
 .input-group {
     display: flex;
     gap: 20px;
-    border: solid 1px red;
+
 }
 
 .input-group>input {
     width: 50%;
+    background-color: var(--cor3);
+
+}
+
+input {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: var(--cor3);
+    border: none;
+
+
+}
+
+textarea {
+    margin: 10px 0px;
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    background-color: var(--cor3);
+    height: 100px;
+    border: none;
+
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 20vw;
+    border: none;
+    color: white;
+    background-color: var(--cor1);
+}
+
+button:hover {
+    background-color: var(--cor4);
 }
 
 /* Títulos dentro de cada coluna */
-#esquerda p,
-#direita p {
+#esquerda p {
     font-size: 16px;
     margin-bottom: 10px;
+    border: solid 1px red;
 }
 
 /* ---------------------------- */
