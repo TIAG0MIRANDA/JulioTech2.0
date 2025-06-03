@@ -11,9 +11,6 @@
     --cor2: #203742;
     --cor3: #393939;
     --cor4: #111111;
-    --cor5: #313739;
-    --cor6: #E3892B;
-    --cor7: #313739;
 }
 
 html {
@@ -383,7 +380,6 @@ main>#contatos-container>#direita {
     width: 35%;
     background-color: var(--cor0);
     padding: 20px;
-    border: solid 1px red;
 }
 
 #esquerda p {
@@ -472,7 +468,7 @@ textarea {
 
 }
 
-button {
+main>#contatos button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -485,7 +481,7 @@ button {
     background-color: var(--cor1);
 }
 
-button:hover {
+main>#contatos button:hover {
     background-color: var(--cor4);
 }
 
@@ -504,47 +500,23 @@ footer h1 {
     margin-bottom: 20px;
 }
 
-footer p {
+.ds {
     color: white;
-    background-color: var(--cor7);
     text-shadow: 2px 2px 2px black;
-    box-shadow: 2px 2px 2px black;
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 20px;
     letter-spacing: 1px;
     text-align: justify;
     line-height: 1.8;
-    flex: 1;
-    min-width: 300px;
+    min-width: 360px;
 }
 
 footer a {
-    color: white;
-    background-color: var(--cor7);
-    text-shadow: 2px 2px 2px black;
-    box-shadow: 2px 2px 2px black;
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    margin-bottom: 15px;
-    transition: 0.3s;
+    color: var(--cor2);
 }
 
-footer a:hover {
-    background-color: var(--cor6);
-    color: black;
-    text-shadow: none;
+small {
+    color: var(--cor3);
 }
 
-footer img {
-    width: 20px;
-    height: 20px;
-}
 
 /* Cores para HTML, CSS e JS */
 .m1 {
