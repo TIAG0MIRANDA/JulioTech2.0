@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -19,7 +20,6 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--cor0);
 }
 
@@ -121,7 +121,6 @@ nav {
         align-items: center;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        border: solid 1px yellow;
     }
 
     .nav-list li {
@@ -209,9 +208,9 @@ main {
     right: 10px;
 }
 
-/* ----------- produtos ----------- */
+/* ========================== SERVIÇOS ========================== */
 #produtos {
-    padding: 150px 20px 150px 20px;
+    padding: 150px 20px;
 }
 
 .info>h1 {
@@ -249,9 +248,10 @@ main {
 
 main>#produtos>#sessao-produtos {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 250px 20px 250px;
+    justify-content: center;
+    padding: 20px 50px;
     gap: 20px;
 }
 
@@ -287,13 +287,25 @@ main>#produtos>#sessao-produtos>a>.produtos>p {
     padding: 10px;
 }
 
-/* ------------------ */
+/* ========================== SERVIÇOS ========================== */
 
-main>#servicos {
-    padding: 0px 0px 150px 0px;
+main #servicos {
+    padding-bottom: 150px;
 }
 
-main>#servicos>#sessao-servicos {
+@media (max-width: 768px) {
+    .sessao-servicos {
+        flex-direction: column;
+    }
+
+    img,
+    h1,
+    p {
+        width: 100%;
+    }
+}
+
+main>#servicos>.sessao-servicos {
     padding: 20px 150px;
     width: 100%;
     display: flex;
@@ -302,84 +314,100 @@ main>#servicos>#sessao-servicos {
     justify-content: center;
 }
 
-main>#servicos>#sessao-servicos>a {
+main>#servicos>.sessao-servicos>a {
     flex: 0 1 calc(50% - 20px);
     /* ocupa metade do espaço, com gap considerado */
-    height: 220px;
+    height: auto;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--cor3);
     text-decoration: none;
+    text-align: justify;
 }
 
-main>#servicos>#sessao-servicos>a:hover {
+main>#servicos>.sessao-servicos>a:hover {
     box-shadow: 0px 0px 10px var(--cor1);
 }
 
-main>#servicos>#sessao-servicos>a>.servicos {
+
+main>#servicos>.sessao-servicos>a>.servicos {
     display: flex;
     align-items: center;
-    /* Alinha a imagem e o texto verticalmente */
 }
 
-main>#servicos>#sessao-servicos>a>.servicos>img {
+@media (max-width: 1100px) {
+    main>#servicos>.sessao-servicos>a>.servicos {
+        flex-direction: column;
+    }
+
+    main>#servicos>.sessao-servicos>a>.servicos>img {
+        margin-right: 0;
+        /* Remove o espaço lateral */
+        margin-bottom: 10px;
+        /* Dá um espaçozinho embaixo da imagem */
+    }
+
+    main>#servicos>.sessao-servicos>a>.servicos>div {
+        align-items: center;
+        /* Centraliza o texto no mobile */
+        text-align: center;
+    }
+}
+
+main>#servicos>.sessao-servicos>a>.servicos>img {
     width: 150px;
     height: 150px;
     margin-right: 10px;
     /* Para adicionar um espaço entre a imagem e o texto */
 }
 
-main>#servicos>#sessao-servicos>a>.servicos>div {
+main>#servicos>.sessao-servicos>a>.servicos>div {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding: 20px;
 }
 
-
-
-main>#servicos>#sessao-servicos>a>.servicos>div>h1 {
-    color: white;
+main>#servicos>.sessao-servicos>a>.servicos>div>h1 {
     width: 100%;
-    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
-main>#servicos>#sessao-servicos>a>.servicos>div>p {
-    color: white;
-    padding: 20px 20px 20px 0px;
-}
-
-main>#contatos-container>#esquerda {
-    border: solid 1px red;
-    width: 50%;
-}
-
-main>#contatos-container>#direita {
-    border: solid 1px red;
-    width: 50%;
-    height: 400px;
-}
-
-
-
-/* ========================== CONTATO ========================== */
+/* ========================== CONTATOS ========================== */
 .container-flex {
     display: flex;
     justify-content: center;
-    /* 👉 Centraliza horizontalmente */
     gap: 20px;
     margin-top: 20px;
     padding-bottom: 170px;
 }
 
+@media (max-width: 768px) {
+    .container-flex {
+        flex-direction: column;
+    }
 
-/* Estilos da coluna da esquerda */
+    #esquerda,
+    #direita {
+        width: 100%;
+    }
+}
+
 #esquerda {
-    width: 35%;
+    width: 30vw;
     background-color: var(--cor0);
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+    #esquerda {
+        width: 100%;
+        max-width: none;
+        padding: 20px;
+    }
 }
 
 #esquerda p {
@@ -414,18 +442,24 @@ main>#contatos-container>#direita {
     margin-right: 10px;
 }
 
-/* Estilos para as seções dentro das colunas */
 #esquerda div {
     margin-bottom: 20px;
 }
 
 /* ============================================================= */
 
-/* Estilos da coluna da direita */
 #direita {
-    width: 50%;
+    width: 50vw;
     background-color: var(--cor0);
-    padding: 20px 40px 20px 20px;
+    padding: 20px 40px;
+}
+
+@media (max-width: 768px) {
+    #direita {
+        width: 100%;
+        max-width: none;
+        padding: 20px;
+    }
 }
 
 #direita>P {
@@ -485,7 +519,7 @@ main>#contatos button:hover {
 
 
 
-/* ---------------------------- */
+/* ============================================================= */
 
 footer {
     background-color: var(--cor4);
