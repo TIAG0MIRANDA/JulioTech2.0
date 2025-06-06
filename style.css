@@ -174,7 +174,6 @@ main {
     aspect-ratio: 16/6;
     overflow: hidden;
     margin: auto;
-    border: solid 1px red;
 }
 
 .slides {
@@ -440,6 +439,7 @@ main>#servicos>.sessao-servicos>a>.servicos>div>h1 {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 #esquerda div {
