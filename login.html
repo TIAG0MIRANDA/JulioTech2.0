@@ -9,23 +9,18 @@
 </head>
 
 <body>
-
     <div class="container">
         <h1>Login</h1>
 
-        <form action="#" method="post">
-            <input type="text" name="nome" placeholder="Nome de usuário" required>
+        <input type="email" id="email" placeholder="E-mail" required>
+        <input type="password" id="senha" placeholder="Senha" required>
 
-            <input type="password" name="senha" placeholder="Senha" required>
-
-            <button type="submit">Entrar</button>
-        </form>
-
-        <p>Não tem uma conta?
-            <a href="cadastro.html">Cadastre-se</a>
-        </p>
+        <button onclick="logar()">Login</button>
+        <br><br>
+        <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
     </div>
 
+    <script src="login.js"></script>
 </body>
 
 </html>
