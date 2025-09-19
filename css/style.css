@@ -34,10 +34,16 @@ header {
     position: fixed;
     z-index: 999;
     background-color: var(--cor0);
+    border: solid 1px yellowgreen;
 }
 
+/** ============ logo ============ */
 .logo {
-    color: white;
+    border: solid 1px yellow;
+}
+
+.logo-txt {
+    color: #ffffff;
     text-decoration: none;
     text-shadow: 2px 2px 2px black;
     text-transform: uppercase;
@@ -61,7 +67,9 @@ a:hover {
     color: var(--cor1);
 }
 
-.login {
+/** ============ nav list ============ */
+
+.btn-login {
     text-decoration: none;
     text-transform: uppercase;
     border: solid 2px #ADB7BE;
@@ -69,12 +77,13 @@ a:hover {
     border-radius: 5px;
 }
 
-.login:hover {
+.bnt-login:hover {
     color: var(--cor1);
     border: solid 2px var(--cor1);
 }
 
 nav {
+    border: solid 1px yellow;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -91,6 +100,8 @@ nav {
     letter-spacing: 2px;
     margin-left: 32px;
 }
+
+/** ============ responsividade ============ */
 
 .mobile-menu {
     display: none;

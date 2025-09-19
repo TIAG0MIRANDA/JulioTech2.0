@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(29, 29, 29);
+}
+
+header {
+    background-color: #0053E2;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+
+    border: solid 1px white;
+}
+
+.logo-container {
+    border: solid 1px;
+}
+
+.logo-title {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+span {}

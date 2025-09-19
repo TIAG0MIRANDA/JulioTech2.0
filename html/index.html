@@ -1,231 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+<!-- Cabeçalho do site -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Júlio Tech</title>
+
+    <!-- Infos sobre o site -->
+    <meta name="author" content="Tiago Miranda">
+    <meta name="description" content="JulioTech 2.0 - evolução do projeto iniciado no ensino médio, agora com foco em tecnologia e desenvolvimento.">
+    <title>JulioTech</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+
+    <!-- Cabeçalho -->
     <header>
-        <a class="logo" href="/">
-            <h1>Júlio <strong>Tech</strong></h1>
-        </a>
-        <nav>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+        <!-- Logo do site -->
+        <div class="logo-container">
+            <h1>
+                <a class="logo-title" href="index.html">
+                    Julio <span>TECH</span>
+                </a>
+            </h1>
+        </div>
+
+        <!-- Barra de pesquisa -->
+        <div class="search-container">
+            <form role="search"> <!-- Sempre em inglês, mesmo que o site esteja em português.-->
+                <input type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <!-- Botão user -->
+        <div class="user-container" tabindex="0">
+            <img src="user.png" alt="Foto do usuário" class="user-img">
+            <span class="user-name">Tiago</span>
+            <div class="user-menu">
+                <a href="#">Configurações</a>
+                <a href="#">Sair</a>
             </div>
+        </div>
+
+        <!-- Menu nav -->
+        <nav class="main-nav">
             <ul class="nav-list">
                 <li><a href="#">Início</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="serviços.html">Serviços</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-                <li><a href="login.html" class="login">Login</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Carrinhos</a></li>
+                <li><a href="#">Histórico</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <main>
-            <div class="carrossel">
-                <div class="slides">
-                    <a href="produtos.html">
-                        <img src="../img/audi.jpg" alt="Imagem 1">
-                    </a>
-                    <a href="serviços.html">
-                        <img src="../img/mercedes.jpg" alt="Imagem 2">
-                    </a>
-                    <a href="#contatos">
-                        <img src="../img/gray.jpg" alt="Imagem 3">
-                    </a>
-                </div>
-
-                <button class="anterior">◀</button>
-                <button class="proximo">▶</button>
-            </div>
 
 
-            <div id="produtos">
-                <div class="info">
-                    <h1>Produtos</h1>
-                    <p>Que tipo de equipamento você está procurando?</p>
-                    <div class="link-container">
-                        <a href="produtos.html">Veja mais</a>
-                    </div>
-                </div>
-                <div id="sessao-produtos">
-                    <a href="produtos.html">
-                        <div class="produtos">
-                            <img src="../img/Gamer.png" alt="Gamer">
-                            <p>Gamer</p>
-                        </div>
-                    </a>
-                    <a href="produtos.html">
-                        <div class="produtos">
-                            <img src="../img/conforto.png" alt="Conforto">
-                            <p>Conforto</p>
-                        </div>
-                    </a>
-                    <a href="produtos.html">
-                        <div class="produtos">
-                            <img src="../img/office.png" alt="Escritorio e outros">
-                            <p>Escritorio e outros</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div id="servicos">
-                <div class="info">
-                    <h1>Serviços</h1>
-                    <p>Fornecemos mais do que produtos de tecnologia</p>
-                    <div class="link-container">
-                        <a href="#">Veja mais</a>
-                    </div>
-                </div>
-                <div class="sessao-servicos">
-                    <a href="serviços.html">
-                        <div class="servicos">
-                            <img src="../img/Bom-preço.png" alt="oi">
-                            <div>
-                                <h1>Garantia vitalícia</h1>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis alias
-                                    porro
-                                    eius sint praesentium illum id similique vitae? Itaque quod recusandae quibusdam
-                                    aspernatur dolorem necessitatibus iste, eveniet deserunt tempora.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="serviços.html">
-                        <div class="servicos">
-                            <img src="../img/Bom-preço.png" alt="oi">
-                            <div>
-                                <h1>Garantia vitalícia</h1>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis alias
-                                    porro
-                                    eius sint praesentium illum id similique vitae? Itaque quod recusandae quibusdam
-                                    aspernatur dolorem necessitatibus iste, eveniet deserunt tempora.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="serviços.html">
-                        <div class="servicos">
-                            <img src="../img/Bom-preço.png" alt="oi">
-                            <div>
-                                <h1>Garantia vitalícia</h1>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis alias
-                                    porro
-                                    eius sint praesentium illum id similique vitae? Itaque quod recusandae quibusdam
-                                    aspernatur dolorem necessitatibus iste, eveniet deserunt tempora.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="serviços.html">
-                        <div class="servicos">
-                            <img src="../img/Bom-preço.png" alt="oi">
-                            <div>
-                                <h1>Garantia vitalícia</h1>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis alias
-                                    porro
-                                    eius sint praesentium illum id similique vitae? Itaque quod recusandae quibusdam
-                                    aspernatur dolorem necessitatibus iste, eveniet deserunt tempora.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div id="contatos">
-                <div class="info">
-                    <h1>Contatos</h1>
-                    <p>Fornecemos mais do que produtos de tecnologia</p>
-                </div>
-
-                <div class="container-flex">
-                    <!-- caixa da esquerda -->
-                    <div id="esquerda">
-                        <a href="#">
-                            <h1>JÚLIO <strong>TECH</strong></h1>
-                        </a>
-                        <div>
-                            <p>Contato direto</p>
-                            <img src="../img/whatsapp.png" alt="WhatsApp">
-                            <a href="https://wa.me/5551991725748?text=Olá%20Tiago,%20vi%20seu%20portfólio%20e%20gostaria%20de%20falar%20com%20você!" 
-                            target="_blank">(51) 991 725 748</a>
-                            <br><br>
-                            <img src="../img/gmail.png" alt="Email">
-                            <a href="mailto:t.miranda0249@gmail.com" target="_blank">t.miranda0249@gmail.com</a>
-                        </div>
-                        <div>
-                            <p>Social</p>
-                            <a href="https://www.instagram.com/otiaguinhom/" target="_blank"><img
-                                    src="../img/instagram.png" alt="Instagram"></a>
-                            <a href="https://www.linkedin.com/in/miranda-tiago/" target="_blank"><img
-                                    src="../img/linkedin.png" alt="LinkedIn"></a>
-                            <a href="https://github.com/TIAG0MIRANDA" target="_blank"> <img src="../img/github.png"
-                                    alt=""></a>
-
-                        </div>
-                    </div>
-
-                    <!-- caixa da direita -->
-                    <div id="direita">
-                        <p>Envie sua mensagem</p>
-                        <form action="https://formsubmit.co/t.miranda0249@gmail.com" method="POST">
-                            <div class="input-group">
-                                <input type="text" name="nome" placeholder="Nome" required>
-                                <input type="text" name="sobrenome" placeholder="Sobrenome" required>
-                            </div>
-                            <input type="text" name="assunto" placeholder="Assunto" required>
-                            <textarea name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
-                            <button type="submit">Enviar</button>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-        </main>
-
-        <footer>
-            <h1>Sobre o projeto</h1>
-            <p class="ds">
-                O <strong>JulioTech 2.0</strong> é a evolução de um projeto criado originalmente durante meu ensino
-                médio no Senac. Agora, ele retorna reformulado, apoiado em uma base mais sólida de desenvolvimento.
-
-                <br><br>
-
-                Nesta nova versão, aplico práticas modernas de <strong>tecnologia e programação</strong>
-                para oferecer uma solução mais completa, funcional e profissional. O <strong>JulioTech 2.0</strong>
-                representa não só um avanço técnico, mas também um reflexo da minha própria evolução pessoal no
-                mundo da tecnologia. Este projeto foi desenvolvido utilizando
-                <strong class="m1">HTML</strong>,
-                <strong class="m2">CSS</strong> e
-                <strong class="m3">JavaScript</strong>.
-            </p>
-            <br>
-            <hr>
-            <br>
-            <small>
-                © 2025 Tiago Miranda. <br>
-                Design do <a href="https://ui8.net/phuc-pham-creative/products" target="_blank">Phuc Pham
-                    -
-                    UI8</a>.<br>
-                Ícones fornecidos por <a href="https://www.flaticon.com/br/" target="_blank">Flaticon</a>.
-            </small>
-        </footer>
-
-        <script src="../js/carrossel.js"></script>
-        <script src="../js/mobile-navbar.js"></script>
-
+    <main></main>
+    <footer></footer>
 </body>
 
 </html>
